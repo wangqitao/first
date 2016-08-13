@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<style>
+		.wrap{
+			display: -webkit-box;
+			-webkit-box-orient:vertical;
+		}
+		
+		section{
+			-webkit-box-flex:1;
+			overflow-y:auto;
+		}
+		section .lunTop img{
+			width: 100%;
+			height: 200px;
+		}
+		section .lunTop{
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			height: 200px;
+		}
+		section .lunTop ul{
+			position: absolute;
+			display: -webkit-box;
+
+		}
+		section .con{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+		}
+
+		section .con .mark{
+			background: red;
+			width: 100%;
+		}
+		section .con .mark p{
+			
+			float: left;
+		}
+		section .con .mark ol{
+			
+			display: -webkit-box;
+		}
+		section .con .mark ol li{
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background: green;
+		}
+		section .detail ul{
+			display: -webkit-box;
+		}
+		section .detail ul li{
+			text-align: center;
+
+			-webkit-box-flex:1;
+			display: -webkit-box;
+			-webkit-box-pack:center;
+			-webkit-box-align:center;
+			-webkit-box-orient:vertical;
+		}
+		section .detail ul img{
+			display: block;
+		}
+		section .detail ol{
+			overflow: hidden;
+		}
+		section .detail ol li{
+			width: 20%;
+			
+			margin: 1rem 5%;
+			float: left;
+			text-align: center;
+			border: 1px solid #ccc;
+			border-radius: 100%;
+		}
+		section .caipu{
+			clear: both;
+			padding: 0 1rem;
+		}
+		section .caipu h1{
+			color: red;
+		}
+		section .caipu dl{
+			display: -webkit-box;
+		}
+		section .caipu dl dt{
+			width: 80px;
+			margin-right: 10px;
+		}
+		section .caipu dl dt img{
+			width: 100%;
+		}
+		section .caipu dl dd{
+			-webkit-box-flex:1;
+		}
+		section .caipu dl dd > *{
+			display: block;
+		}
+		footer{
+			height: 50px;
+		}
+		footer ul{
+			display: -webkit-box;
+			height: 100%;
+		}
+		footer ul li{
+			-webkit-box-flex:1;
+			text-align: center;
+			display: -webkit-box;
+			-webkit-box-pack:center;
+			-webkit-box-align:center;
+			-webkit-box-orient:vertical;
+		}
+		footer ul li i.fa{
+			display: block;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		
+		<section>
+			<div class="lunTop" id="lunTop">
+				<ul>
+					<li><img src="images/img4.png" alt=""></li>
+					<li><img src="images/img4.png" alt=""></li>
+					<li><img src="images/img4.png" alt=""></li>
+					<li><img src="images/img4.png" alt=""></li>
+				</ul>
+				<div class="con">
+					<input type="text">
+					<button>取消</button>
+
+					<div class="mark">
+						<p>水果沙拉</p>
+						<ol>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+
+			<div class="detail">
+				<ul>
+					<li><img src="images/img1.png">排行榜</li>
+					<li><img src="images/img1.png">排行榜</li>
+					<li><img src="images/img1.png">排行榜</li>
+					<li><img src="images/img1.png">排行榜</li>
+				</ul>
+				<ol>
+					<li>孕妇</li>
+					<li>白领</li>
+					<li>老人</li>
+					<li>儿童</li>
+					<li>更多</li>
+				</ol>
+			</div>
+
+			<div class="caipu">
+				<h1>菜谱专辑</h1>
+				<dl>
+					<dt><img src="images/img10.png" alt=""></dt>
+					<dd>
+						<b>看世界杯绝佳的下酒菜</b>
+						<i>by 幻月飘雪</i>
+						<p>6月13日，迎来了大多数老爷们sd卡和格兰仕的规划来上课刚回来的反馈</p>
+					</dd>
+				</dl>
+			</div>
+		</section>
+		<footer>
+			<ul>
+				<li><i class="fa fa-fw fa-weixin"></i>首页</li>
+				<li><i class="fa fa-fw fa-weixin"></i>搜索</li>
+				<li><i class="fa fa-fw fa-weixin"></i>分类</li>
+				<li><i class="fa fa-fw fa-weixin"></i>我的</li>
+			</ul>
+		</footer>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/show.js"></script>
